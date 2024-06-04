@@ -19,3 +19,10 @@ A importância dessa ferramenta para a elaboração do projeto se dá pelo fato 
 Licensa para uma frase que o instrutor falou durante a aula que faz muito sentido para mim e acredito que deva ser documentada:
 
 >O melhor programador não é o que decorou comandos, mas é aquele que sabe o que a linguagem pode fazer, mesclar os conceitos e gerar resultados através disso.
+
+### Documentação do Projeto
+
+#### Primeiro Tópico
+~~~~python
+Linhas de Código Python aqui
+~~~~
