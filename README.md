@@ -63,8 +63,14 @@ Como poderia ser acessado esse dado na memória? Através de um comando que já 
 print(projeto)
 ~~~~
 
+Quando essa linha de código for executada, aparecerá no terminal a frase `Semana do Python na Prática` pois é a frase que está alocada dentro da variável `projeto`.
+
+Se o nome da variável for um nome duplo, usa-se `_` para separar os dois nomes, por exemplo: `horas_trabalhadas`.
+
 Alguns detalhes importantes:
 - Python é _case sensitive_, ou seja, ele faz diferenciação entre letras maiúsculas e minúsculas.
 - Use nomes que façam sentidos.
 - Não pode iniciar uma varíavel com número.
 - Não pode conter espaços em brancos.
+
+#### _Mesclando todos os conceitos aprendidos até agora_
