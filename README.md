@@ -22,7 +22,23 @@ Licensa para uma frase que o instrutor falou durante a aula que faz muito sentid
 
 ### Documentação do Projeto
 
-#### Primeiro Tópico
+#### Mostrar as informações para o usuário
+
+Isto será feito através do comando `print()`. Quando usado, esse comando irá printar para o usuário alguma informação na tela.
+
 ~~~~python
-Linhas de Código Python aqui
+print("Semana do Python na Prática")
+print("Eu quero aprender Python de verdade!")
 ~~~~
+
+Quando for executado, será impresso na tela as mesmas frases dentro do `print()`.
+
+#### Receber dados do usuário
+
+Receber dados num programa é uma das formas de interação com o usuário. Essa interação se dará pelo comando `input()`. Veja a seguir:
+
+~~~~python
+input("Digite seu nome: ")
+~~~~
+
+Ao ser executado, esse código exibirá no terminal o texto dentro dos parênteses e o usuário poderá digitar seu nome.
