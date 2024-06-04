@@ -35,6 +35,14 @@ Quando for executado, será impresso na tela as mesmas frases dentro do `print()
 
 #### Receber dados do usuário
 
+Receber dados num programa é uma das formas de interação com o usuário. Essa interação se dará pelo comando `input()`. Veja a seguir:
+
+~~~~python
+input("Digite seu nome: ")
+~~~~
+
+Ao ser executado, esse código exibirá no terminal o texto dentro dos parênteses e o usuário poderá digitar seu nome.
+
 #### Armazenando dados em variáveis
 
 Variáveis são espaços na memória onde podemos guardar todos os dados que o usuário nos fornece ou aqueles dados que são pré concebidos no projeto. Uma analogia interessante é como se as variáveis fossem um armário com gavetas. Em cada gaveta estará um dado diferente e cada uma dessas gavetas terá um nome.
