@@ -74,3 +74,37 @@ Alguns detalhes importantes:
 - Não pode conter espaços em brancos.
 
 #### _Mesclando todos os conceitos aprendidos até agora_
+
+Agora, vamos unir todos esses conceitos estudados até agora.
+
+~~~python
+projeto = input("Digite a descrição do projeto: ")
+horas_previstas = input("Digite a quantidade de horas previstas: ")
+valor_hora = input("Digite o valor da hora trabalhada: ")
+prazo = input("Digite o prazo estimado: ")
+~~~
+
+Temos quatro variáveis, onde em cada variável o usuário alocará algum dado informado por ele: (1) a descrição do projeto, (2) a quantidade de horas previstas, (3) o valor da hora trabalhada e (4) o prazo estimado para a conclusão do projeto.
+
+Depois de rodado essas linhas, aparentemente nada ocorrerá. Para que os dados fornecidos pelo usuário apareçam será necessário, como vimos, o uso do comando `print()`.
+
+~~~python
+print(projeto)
+print(horas_previstas)
+print(valor_hora)
+print(prazo)
+~~~
+
+Depois de roda essa série de comandos, todas as informações dadas pelo usuário aparecerá no terminal.
+
+```
+Desenvolvimento python
+100
+20
+3 meses
+```
+#### _Tipos de dados_
+- Textos: `str`
+- Números: `int`
+- Comandos: `type()`, `str()`, `int()`
+
