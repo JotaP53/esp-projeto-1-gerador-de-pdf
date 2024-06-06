@@ -104,7 +104,112 @@ Desenvolvimento python
 3 meses
 ```
 #### _Tipos de dados_
+
 - Textos: `str`
 - Números: `int`
 - Comandos: `type()`, `str()`, `int()`
 
+Essas pequenas palavras são bastante importantes para o nosso uso do dia a dia. Em rápidas palavras, se quisermos usar textos em nossas variáveis, declaramos `str`, se quisermos usar números inteiros: `int`, número com pontos flutuantes: `float`. Agora, com os comandos `type()`, `str()` e `int()` nós podemos converter dados dentro de variáveis.
+
+Por exemplo:
+
+Digamos que eu queira transformar o número 10 em um texto, usamos o seguinte comando:
+
+~~~python
+str(10)
+~~~
+
+Ao ser executado, no terminal aparecerá
+
+```
+'10'
+```
+
+Aparecerá o número 10 entre aspas sinalizando que aquele número foi transformado em uma string, ou um texto.
+
+#### _Cálculos no Python_
+
+Se apenas executar 10 + 10 em nosso código, ele logo dará o resultado: 20. Isso é uma das várias demonstraçõs de simplicidade com o Python.
+
+~~~python
+10 + 10
+~~~
+```
+20
+```
+
+Mas, digamos que queiramos somar o seguinte:
+
+~~~python
+10 + "10"
+~~~
+
+Como você pode observar, o segundo número trata-se de um texto. Essa informação é importante para nós porque no dia a dia da nossa vida de programador, iremos utilizar vários `input`, e tudo que chega ao `input` trata-se de um texto. Se em nossa aplicação quisermos que o usuário ofereça números para que o programa realize a soma? Usaremos `input` que será convertido em texto. Mas, como somar texto?
+
+Vamos ver a seguir:
+
+~~~python
+int(horas_previstas) * int(valor_hora)
+~~~
+
+Onde `horas_previstas` é 200 e `valor_hora` é 30.
+
+Agora, nossas variáveis que antes tinha sido recebidas como textos, agora foram convertidas em interiros. E a multiplicação poderá ser realizada, dando o valor:
+
+```
+600
+```
+
+#### _Gerando o PDF do Orçamento_
+
+Agora iremos unir tudo o que vimos até aqui para finalmente seguir para o produto do nosso projeto: o gerador de PDF.
+
+Primeiro, iremos instalar o FPDF.
+
+Fazemos o seguinte comando no terminal:
+
+~~~python
+pip install fpdf
+~~~
+
+Só precisa instalar uma vez no ambiente.
+
+Agora iremos começar a gerar:
+
+~~~python
+
+# A aula não explicou bem esse import FPDF, mas com o tempo aprenderei a função dele.
+from fpdf import FPDF
+
+pdf = FPDF()
+
+# Esse comando gera a página do PDF, mas branco. As configurações serão feitas em seguida.
+pdf.add_page()
+
+# Esse comando servirá para configurarmos a fonte que querermos usar em nosso PDF.
+pdf.set_font("Arial")
+
+# Esse comando serve para puxar nossa imagem de layout para o PDF não ficar todo brancão.
+pdf.image("template.png", x=0, y=0)
+
+# Todas as variáveis que estão sendo chamadas aqui são variáveis que já foram criadas neste projeto anteriormente.
+pdf.text(115, 145, projeto)
+pdf.text(115, 160, horas_previstas)
+pdf.text(115, 175, valor_hora)
+pdf.text(115, 190, prazo)
+
+# Aqui estamos usando o comando str() para converter o resultado final em texto.
+pdf.text(115, 205, str(valor_total))
+
+# Aqui é o comando de saída, o PDF será gerado a partir daqui.
+pdf.output("Orçamento.pdf")
+
+# Para printar a mensagem final.
+print("Orçamento gerado com sucesso!")
+~~~
+
+### Conslusão
+
+E assim terminamos esse projeto.
+
+PS: Precisa terminar o Jupyter Notebook.
